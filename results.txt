@@ -1,0 +1,17 @@
+--- Best-case ---
+n        structure     insert(ms)   search(ms)   delete(ms)    extra
+100      BST               0,0127       0,0084       0,0124     h=11
+100      HashTable         0,0247       0,0048       0,0058  chain=3
+1000     BST               0,0980       0,0782       0,0916     h=20
+1000     HashTable         0,0858       0,0286       0,0306  chain=4
+10000    BST               1,0989       0,8509       0,9518     h=29
+10000    HashTable         0,3434       0,0960       0,1072  chain=5
+
+--- Worst-case  ---
+n        structure     insert(ms)   search(ms)   delete(ms)    extra
+100      BST               0,0196       0,0106       0,0013    h=100
+100      HashTable         0,0038       0,0011       0,0015  chain=2
+1000     BST               2,1629       0,9024       0,0108   h=1000
+1000     HashTable         0,0356       0,0074       0,0092  chain=4
+10000    BST             215,6458      77,6232       0,0285  h=10000
+10000    HashTable         0,2624       0,0401       0,0520  chain=5
